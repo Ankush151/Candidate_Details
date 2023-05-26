@@ -1,0 +1,48 @@
+<h1 mat-dialog-title>Add Details</h1>
+<div mat-dialog-content>
+    <form class="example-form" [formGroup]="studentDetailsForm" (ngSubmit)="saveButton()">
+    <mat-form-field appearance="outline">
+        <mat-label>Student Name</mat-label>
+        <input matInput placeholder="Full Name" formControlName="name">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Roll Number</mat-label>
+        <input type="number" matInput placeholder="Roll Number" formControlName="roll">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Subject Name</mat-label>
+        <input  matInput placeholder="Subject Name" formControlName="subject">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Practical Marks</mat-label>
+        <input type="number" matInput placeholder="Practical" formControlName="practical">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Theory Marks</mat-label>
+        <input type="number" matInput placeholder="Theory" formControlName="theory">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Total Marks Obtained</mat-label>
+        <input type="number" matInput placeholder="Total Marks" formControlName="total">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Grade Obtained</mat-label>
+        <input matInput placeholder="Grade" formControlName="grade">
+    </mat-form-field>
+
+    <div mat-dialog-action [align] ="'end'">
+        <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+        <button style="margin-left: 8px" mat-raised-button color="primary">Save</button>
+        </div>
+</form>
+
+
+
+</div>
+
